@@ -1,7 +1,7 @@
 # Toast
 Toast提示框
 
-写了一个Swift版提示框，简单明了 代码还少😄，有用到的同学可以自己下载Deom地址查看
+写了一个Swift版提示框，简单明了 代码还少😄，有用到的同学可以自己下载 [Deom地址查看](https://github.com/bolagong/Toast)
 
 首先来个效果图：   ![效果图.gif](https://upload-images.jianshu.io/upload_images/5261964-8d480d50b71378e1.gif?imageMogr2/auto-orient/strip)
 
@@ -39,4 +39,4 @@ self.showIndicatorToast(message: "加载", aLocationStr: "top", aShowTime: 6.0)
 CBToast.hiddenIndicatorToastAction()
 ```
 
-Deom地址查看
+[Deom地址查看](https://github.com/bolagong/Toast)
