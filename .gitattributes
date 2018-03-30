@@ -1,1 +1,2 @@
-*.Objective-C linguist-language=Swift
+*.h linguist-language=swift
+*.m linguist-language=swift
