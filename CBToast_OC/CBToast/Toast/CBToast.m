@@ -15,7 +15,7 @@ static UIView *toastView = nil;
     @synchronized(self) {
         if (toastView == nil) {
             toastView = [[UIView alloc] init];
-            toastView.backgroundColor = [UIColor darkGrayColor];
+            toastView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.85];
             toastView.layer.masksToBounds = YES;
             toastView.layer.cornerRadius = 5.0;
             toastView.alpha = 0;
@@ -54,7 +54,7 @@ static UIView *toastViewLabel = nil;
     @synchronized(self) {
         if (toastViewLabel == nil) {
             toastViewLabel = [[UIView alloc] init];
-            toastViewLabel.backgroundColor = [UIColor darkGrayColor];
+            toastViewLabel.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.85];
             toastViewLabel.layer.masksToBounds = YES;
             toastViewLabel.layer.cornerRadius = 5.0;
             toastViewLabel.alpha = 0;
