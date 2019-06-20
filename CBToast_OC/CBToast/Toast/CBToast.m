@@ -67,7 +67,7 @@ static UIView *toastViewLabel = nil;
             
             UILabel *aLabel = [[UILabel alloc] init];
             aLabel.tag = 11;
-            aLabel.backgroundColor = toastViewLabel.backgroundColor;
+            aLabel.backgroundColor = [UIColor clearColor];
             aLabel.font = [UIFont systemFontOfSize:16];
             aLabel.textColor = [UIColor whiteColor];
             aLabel.textAlignment = NSTextAlignmentCenter;
