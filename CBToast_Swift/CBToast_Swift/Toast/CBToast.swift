@@ -205,7 +205,7 @@ extension CBToast {
         objc_sync_enter(self)
         if toastViewLabel == nil {
             toastViewLabel = UIView.init()
-            toastViewLabel?.backgroundColor = UIColor.darkGray
+            toastViewLabel?.backgroundColor = UIColor.black.withAlphaComponent(0.85)
             toastViewLabel?.layer.masksToBounds = true
             toastViewLabel?.layer.cornerRadius = 5.0
             toastViewLabel?.alpha = 0
@@ -218,7 +218,7 @@ extension CBToast {
             
             let aLabel = UILabel.init()
             aLabel.tag = 11
-            aLabel.backgroundColor = toastViewLabel?.backgroundColor
+            aLabel.backgroundColor = UIColor.clear
             aLabel.font = UIFont.systemFont(ofSize: 16)
             aLabel.textColor = UIColor.white
             aLabel.textAlignment = .center
