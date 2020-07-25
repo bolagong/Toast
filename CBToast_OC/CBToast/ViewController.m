@@ -112,7 +112,7 @@
         case 100:
         {
             BOViewController *bVC = [[BOViewController alloc] init];
-            [bVC setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
+            bVC.modalPresentationStyle = UIModalPresentationFullScreen;
             [self presentViewController:bVC animated:YES completion:nil];
         }
             break;
