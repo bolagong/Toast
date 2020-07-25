@@ -1,9 +1,6 @@
 //
-//  BOViewController.swift
-//  CBToast_Swift
-//
-//  Created by chang on 2018/3/29.
-//  Copyright © 2018年 chang. All rights reserved.
+//  Created by c on 2020/7/25.
+//  Copyright © 2020 c. All rights reserved.
 //
 
 import UIKit
