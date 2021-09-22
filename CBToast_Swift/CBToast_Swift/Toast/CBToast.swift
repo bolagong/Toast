@@ -15,8 +15,8 @@ class CBToast: NSObject {
         if Thread.main.isMainThread {
             toastView = self.currentToastView()
             toastView?.removeFromSuperview()
-            let AppDlgt = UIApplication.shared.delegate as! AppDelegate
-            AppDlgt.window?.addSubview(toastView!)
+            guard let aWin = UIApplication.shared.delegate?.window else { return }
+            aWin?.addSubview(toastView!)
             
             let indicatorView = toastView?.viewWithTag(10) as! UIActivityIndicatorView
             indicatorView.center = CGPoint.init(x: 70/2, y: 70/2)
@@ -54,8 +54,8 @@ class CBToast: NSObject {
             toastLabel = self.currentToastLabel()
             toastLabel?.removeFromSuperview()
             
-            let AppDlgt = UIApplication.shared.delegate as! AppDelegate
-            AppDlgt.window?.addSubview(toastLabel!)
+            guard let aWin = UIApplication.shared.delegate?.window else { return }
+            aWin?.addSubview(toastLabel!)
             
             var width = self.stringText(aText: message, aFont: 16, isHeightFixed: true, fixedValue: 40)
             var height : CGFloat = 0
@@ -102,8 +102,8 @@ class CBToast: NSObject {
         if Thread.current.isMainThread {
             toastViewLabel = self.currentToastViewLabel()
             toastViewLabel?.removeFromSuperview()
-            let appDlgt = UIApplication.shared.delegate as! AppDelegate
-            appDlgt.window?.addSubview(toastViewLabel!)
+            guard let aWin = UIApplication.shared.delegate?.window else { return }
+            aWin?.addSubview(toastViewLabel!)
            
             var width = self.stringText(aText: message, aFont: 16, isHeightFixed: true, fixedValue: 40)
             var height : CGFloat = 0
